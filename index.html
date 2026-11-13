@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no,email=no,address=no">
 <meta name="description" content="DeepSeek 驱动的 AI 智能答题与学习工具：实时出题、文章批改、知识点讲解、思维导图、错题本与数据统计。">
-<title>AI 出题 · 智能答题 v3.0</title>
+<title>AI 出题 · 智能答题 v1.5</title>
 <style>
 :root{
   --text:#e8ecf5;--dim:#9aa4ba;--dim2:#76819a;
@@ -469,7 +469,7 @@ header.collapsed .info-i{width:17px;height:17px;font-size:10.5px;border-width:1.
 #stage,#studyView,#historyView,#moreView,#toolView{animation:pageIn .22s ease both}
 @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 
-/* ===== v3.0：性能、可读性与新功能 ===== */
+/* ===== v1.5：性能、可读性与新功能 ===== */
 .card,.filter-panel,.point-card,.hist-item,.more-item,.tool-card,.stat-card{backdrop-filter:none;-webkit-backdrop-filter:none}
 body.modal-open{overflow:hidden}
 ::selection{background:var(--purple-rgba);color:#fff}
@@ -596,7 +596,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="logo">AI</div>
     <div class="brand" id="brandToggle" role="button" tabindex="0" title="点击折叠/展开顶部">
       <h1>智能答题</h1>
-      <p>DeepSeek 驱动 · v3.0</p>
+      <p>DeepSeek 驱动 · v1.5</p>
       <span class="brand-fold">⌃</span>
     </div>
     <button class="icon-btn" id="settingsBtn" aria-label="设置">
@@ -819,7 +819,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
 
       <div class="field">
-        <label>更 新 内 容 · v3.0</label>
+        <label>更 新 内 容 · v1.5</label>
         <div style="font-size:12.5px;line-height:1.9;color:var(--dim2)">
           <b style="color:var(--text)">性能</b>：移除阻塞式调试脚本；卡片不再逐层模糊；背景改为独立图层；本地存储去重与合并写入；已出题库改用集合判重，长会话不卡顿。<br>
           <b style="color:var(--text)">稳定</b>：接口超时与自动重试、错误提示更准确、JSON 解析容错、修复特殊字符导致的排版错乱、修复背景图写入配置导致的存储膨胀。<br>
@@ -858,7 +858,7 @@ const MAX_SEEN = 500;
 const MAX_FAV = 100;
 const MAX_WRONG = 100;
 const AVOID_NUM = 40;
-const VERSION = '3.0.0';
+const VERSION = '1.5.0';
 const BG_DB = 'quiz_bg_db';
 const BG_STORE = 'bg';
 
